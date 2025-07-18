@@ -1,0 +1,86 @@
+/* TextNode component styling */
+.text-node {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0;
+  width: 200px;
+  min-height: 60px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.text-node:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.text-node.selected {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* Node header styling */
+.node-header {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  border-radius: 7px 7px 0 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.node-icon {
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+.node-label {
+  flex: 1;
+}
+
+/* Node content styling */
+.node-content {
+  padding: 12px;
+}
+
+.message-text {
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.4;
+  word-wrap: break-word;
+  min-height: 20px;
+}
+
+/* Handle styling - simplified and more visible */
+.handle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #3b82f6;
+  background: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.target-handle {
+  left: -6px;
+  background: #10b981;
+  border-color: #10b981;
+}
+
+.source-handle {
+  right: -6px;
+  background: #f59e0b;
+  border-color: #f59e0b;
+}
+
+.handle:hover {
+  transform: translateY(-50%) scale(1.3);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
